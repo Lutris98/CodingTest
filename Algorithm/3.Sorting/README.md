@@ -14,7 +14,7 @@
 2. 계수 정렬</br>
 실제 활용도 높음</br>
 최악에도 복잡도 O(N+K) 데이터 개수N나 범위K</br>
-cardinal dataset에 적용될때나 범위가 적당할때</br>
+discrete dataset에 적용될때나 범위가 적당할때</br>
    
 기본 라이브러리</br>
 array.sort()</br>

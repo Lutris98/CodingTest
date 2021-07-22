@@ -27,7 +27,7 @@ print(binary_search(array,target,0,len(array)-1)+1)
 def binary_search(array,target,start,end):
     while start<=end:  # 정상인 쪽을 반복문에 넣음
         mid = (start+end)//2
-        if array[mid]==target: return mid
+        if array[mid]==target: return mid  # 갱신만 하면 되니 엄청 간단함
         elif array[mid]>target: end=mid-1
         else: start = mid+1
     return None
