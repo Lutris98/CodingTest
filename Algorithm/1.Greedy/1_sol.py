@@ -1,12 +1,15 @@
 n = int(input("손님이 낸 돈은 : "))
 count = 0  # 변수이름 센스
 
-coin_types = [500,100,50,10]
+coin_types = [500,100,50,10]  # 다양한 생각은 악이다. 그리디 유형이니까 크기순 생각해볼까 이런 생각을 빨리하는 게 능력
 
-for coin in coin_types :  #for문으로 반복을 극도로 줄임(리스트활용 익숙해지자)
+for coin in coin_types :  
     count += n // coin
     n %= coin
 
 print(count)
+
+# 시간복잡도는 O(N)으로, 동전 종류에만 결정됨
+
 
 # 그리디로 풀 수 있는 이유는 동전조합의 큰 단위가 작은 단위의 배수이기 때문(작은 쪽으로 표현된 조합은 대체가능)

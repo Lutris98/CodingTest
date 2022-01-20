@@ -24,4 +24,4 @@ else :
     N = N - 50*c
     x = a +b + c + N/10
 
-print(f"동전 {int(x)}개 드리겠습니다")  # {}.format아니면 fstring
+print(f"동전 {int(x)}개 드리겠습니다")  # fstring으로 통일하자
